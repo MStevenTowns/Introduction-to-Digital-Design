@@ -1,0 +1,140 @@
+case({h,l,s,e})
+	4'b0110:steal=1;
+	...
+	4'b1111:steal=1;
+	default:steal=0
+endcase
+just concanenate 4 inputs and test binary value(requires every possible combo of inputs)
+or use if, else if, else
+
+combinational circuits
+digital circuit components
+some common organization/structure of logic gate get used repeatedly
+instead of drawing same group of gates, a common symbol is used
+build digital circuits from these components instead of individual gates
+
+multimlexer (MUX)
+many inputs routed to few outputs
+typically only 1 output
+typically inputs are a power of 2
+number of inputs and outpus is written as ratio
+	4:1 MUX has 4 input and 1 output
+
+diagram
+inputs on left 
+usually labled i0 to i3(or any number)
+output on right
+control/select inputs on bottom
+	dont count when counting input
+if s1=0 and s0=0 
+	y=i0
+control is a binary system
+if s1=0 and s1=1
+	y=i1
+
+demultiplexer (DEMUX)
+1 input
+x control/select inputs
+2^x outputs(Max)
+control still forms binary number for output number
+outputs not selected are undefined(default 0)
+
+MUX/DEMUX
+
+make larger MUX from multiple smaller MUX
+4:1 MUX can be made from 3 2:1 MUXs
+
+Decoder
+few inputs routed to multiple outputs
+typically inputs form a bus
+number of inputs and output is written as a ratio
+2:4 decoder has 2 input 4 output
+3:8 has 3 input 8 outuput
+typically custom designed for specific hardware
+
+binary decoder
+input is a binary number (bus) with n bits(wires)
+output is 2^n bits(wires)
+output line specified by input goes HIGH while others remain LOW
+on truth table 1s follow dig from TL to BR
+	everything else is 0
+no way to turn it completely off(without enable in)
+
+Enable in
+Enable in acts like an on/off switch
+when HIGH, device acts normally
+when LOW, device is off and all outputs go low
+allows binary decoder to behave like a demux
+
+7 segment decoder
+decode binary numbers to display on 7 segment display
+each segment is separate LED
+each segment is given unique designation, letter (a-g)
+decoder determines which LEDs need to be turned on for each binary number input
+Need 4 bit input for 0-9
+input=0111
+output=abc light up
+
+LED
+light emitting diod
+anode +
+Cathode -
+anode  >| cathode
+make anode high, cathode low, current flows
+if cathode high, anode low, no flow
+
+basis3 7 segment LED
+4 digits
+common anode 
+	each digit has a single anode that all segments connect to
+	we have 4 instead of 28
+common cathode
+	each segment is connected for all digits
+	(instead of 28 we have 7)
+
+digits(anode)
+	negative logic(0 -turn on, 1 - turn off)
+	(make anode low so current flows to it)
+	when anode is set high(with 0) all segments in the digit can light up
+segments(a-g) (cathode)
+	light up when set up 0
+	same segment on al 4 digits will light up if digit anode is high(with 0)
+
+everything is a 0 to turn the light on, and turned off by 1
+different numbers cannot be displayed simultaneously
+to turn on different numbers on each 7 segment on basiys3 must cycle digits so each one is turned on for a moment.
+(we deal with this after project 9)
+
+priority Encoder
+opposite of binary decoder
+recieves multiple input signals and outputs the binary number of the signal that is HIGH(1)
+if multiple input lines are high, the highest numbered input gets priority
+2^n inputs and n output written as ratio
+4:2 priority encoder has 4 input and 2 outputs
+
+Priority encoder Graphic
+i2=1
+	y1=1, y0=0 (10=2)
+i3=1
+	y1=1,y0=1 (11=3)
+all inputs =0
+	y1=0 y0=0
+duplicate stat with i0=1
+
+to fix duplicate states and enable combos of encoders
+	enable in
+		works as before, when 0 all outputs are 0
+		(doesn't fix)
+	enable out
+		only 1 when enable in is 1 and all outputs are 0
+	group signal
+		is 1 when enable in is 1 and any output is 1
+		(opposite of enable out except for when enable in is 0)
+enable in has precident(if it is 0, everything turns off)
+
+big priority encoder
+DO NOT MAKE THIS
+do nto make big one out of smaller ones
+just make a single big one
+!!!!!DO NOT DO THIS EVER!!!!!!
+

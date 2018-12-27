@@ -1,0 +1,17 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto bd6c1def3fdc4aaea23b87b0552fff48 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CompareSim_behav xil_defaultlib.CompareSim xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port gtIn [/home/steven/Dropbox/Verilog/Examples/Comparitor/Comparitor.srcs/sources_1/new/Compare.v:41]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ltIn [/home/steven/Dropbox/Verilog/Examples/Comparitor/Comparitor.srcs/sources_1/new/Compare.v:42]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port eqIn [/home/steven/Dropbox/Verilog/Examples/Comparitor/Comparitor.srcs/sources_1/new/Compare.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CompareSlice
+Compiling module xil_defaultlib.Compare
+Compiling module xil_defaultlib.CompareSim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CompareSim_behav

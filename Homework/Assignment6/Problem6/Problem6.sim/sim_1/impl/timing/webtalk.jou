@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Feb 16 09:40:47 2016
+# Process ID: 2820
+# Current directory: /home/steven/Dropbox/Verilog/Homework/Assignment6/Problem6/Problem6.sim/sim_1/impl/timing
+# Command line: wbtcv -mode batch -source /home/steven/Dropbox/Verilog/Homework/Assignment6/Problem6/Problem6.sim/sim_1/impl/timing/xsim.dir/Problem6Sim_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/steven/Dropbox/Verilog/Homework/Assignment6/Problem6/Problem6.sim/sim_1/impl/timing/webtalk.log
+# Journal file: /home/steven/Dropbox/Verilog/Homework/Assignment6/Problem6/Problem6.sim/sim_1/impl/timing/webtalk.jou
+#-----------------------------------------------------------
+source /home/steven/Dropbox/Verilog/Homework/Assignment6/Problem6/Problem6.sim/sim_1/impl/timing/xsim.dir/Problem6Sim_time_impl/webtalk/xsim_webtalk.tcl -notrace

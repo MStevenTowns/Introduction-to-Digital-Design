@@ -1,0 +1,7 @@
+Running: xsim.dir/BinCountSim_behav/xsimk -simmode gui -wdb BinCountSim_behav.wdb -simrunnum 0 -socket 49171
+Design successfully loaded
+Design Loading Memory Usage: 130040 KB (Peak: 130056 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 270340 KB (Peak: 335876 KB)
+Simulation CPU Usage: 20 ms

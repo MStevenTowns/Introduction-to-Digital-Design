@@ -1,0 +1,68 @@
+ading binary bits
+decimal
+	5	5
+       +4      +5
+	9      10
+create carry when sum>9
+
+0+0 =0
+0+1=1
+1+0=1
+1+1=10
+
+binnary adders
+half adder
+2 single bit outputs (a and b)
+2 single bit outputs (sum and carry)
+
+full adder
+3 single bit inputs (a, b and carryIn)
+2 single bit outputs (sum and carryOut)
+
+adding 2 numbers of n bits togher will always fit in a n+1 bit answer
+add 2 numbers of n bits together could cause an error if the answer is only n bits
+
+subtracting binary numbers
+ 100
+-010
+=010 	borrow from bit to left
+
+ 100
+-011
+=001
+
+borrow in/ borrow out instead of carry in / carry out
+each bit is dumb
+	each bit will borrow from the next bit even if there is nothing to borrow
+	it is up to each bit to handle if a borrow was taken, it can't stop a previus bit from borrowing
+	nothing can stop a borrow from occuring
+
+negative numbers
+signed bit: first bit(MSB) is 0 for + and 1 for -
+
+1's complement
+type of 'signed' magnitude
+convert + to - by flipping all bits
+
+2's complement
+type of 'signed' magnitude
+convert to negative by fliipping all bits and adding 1
+full range of 8 values, no duplicate 0's
+negating process is reversible (just flip bits and +1 to go either direction)
+adding 2's complement is same as subtraction
+ 2	010	010
+-2     -010    +110	cout=1
+=0     =000    =000 	(doesn't matter)
+math is the same if interpret as signed or unsigned(just changes what is done w/ cout)
+ 1	 001	 001
+-3	-011	+101	borrow out=1
+-2	=110	=110 
+
+addition/subtraction errors
+overflow error	result doesn't fit in andswer due to lack of bits
+underflow error "						"
+
+adding n bits will allways fit in an n+1 bit answer
+adding 2 numbers of n bits together could cause an error (if answer is only n bits
+overflow/underflow error cannot be prevented, but they can be detected
+how to detect errors???

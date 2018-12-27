@@ -1,0 +1,91 @@
+test on thursday
+some mult choice simmilar to practice homework (1/2)
+	30 questions worth 50%
+other  half is writing code
+can be any part (probably 3 things)
+	simmulation
+	behavioral
+	structural
+~3 problems worth 50%
+	
+shift register
+multiple inputs/outputs
+typically buses(power of 2)
+sometime have same number of inputs and outputs(for us usually the same)
+control inputs
+output is manipulated based on control inputs
+
+Controls
+direction to shift (R or L)
+Fill bit
+rotate
+number of places to shift
+
+ex
+d:0  (direction)(0=left, 1 = right)
+f:0  (fill bit)	(fill w/ 0)
+r:0  (rotate)	(dont rotate)
+s1:0 (2s digit of shift)	(places to shift)
+s2:0 (1s digit of shift)	(places to shift)
+input: 10110010
+output:10110010
+
+d:0
+f:0
+r:0
+s1:1 
+s0:0 
+(shift 2 bits left)
+input:	10110010
+output:	11001000
+
+(if rotate, fill doesn't matter)
+
+d:0
+f:0
+r:1
+s1:1
+s0:0
+
+input:	10110010
+outpu: 	11001010
+shift registers are very important for cryptography
+
+modules can be made of combinations of other modules
+structural design to connect to the different modules together
+smaller modules can be behavioral or structural
+
+example 4:1
+in examples (project should work)
+
+bit slice
+complex part can be built from groups of bit pieces
+only works if same action is repeated on each bit of a part
+
+comparitor
+2 n-bit inputs (a and b) 
+3 1-bit outputs (lt, gt, eq)
+only 1 output goes high at a time
+	if a<b lt=1
+	if a>b gt=1
+	if a=b eq=1
+a=01011010
+b=11001110
+
+0: 0=0 	so 		a=b
+1: 1=1 	no chage 	a=b
+2: 0<1 	so now		a<b
+3: 1=1 	no change 	a<b
+4: 1>0 	now		a>b
+5: 0=0 	no change	a>b
+6: 1=1 	no change	a>b
+7: 0<1	now		a<b
+
+each bit needs the following information:
+a and b input bits
+GT, LT, EQ from previus bit
+
+dont need every combo, if 1 output is 1, the others are 0
+for comparisons input = output ( if they are the same)
+only way to get equal out, is if you have equal in
+cannot set equal, just pass it onto the next one

@@ -1,0 +1,129 @@
+
+logic minimization
+minimize umber of gates
+	ideally want to minimize # of transistors
+	we aren't worrying about that
+canonical SOP/POS - contains all terms
+	not optimized (big)
+SOP: (^a^bc)+(^abc)+(a^bc)
+minimal ^ac+^bc
+
+pos: (a+b+c)*(a+^b+c)*(^a+b+c)*(^a
+
+boolean algebra
+algbra for binary number system
+set of rules to use
+	AND Rules
+		a*0=0
+		a*1=a
+		a*a=a
+		a*`a=0
+	OR Rules
+		a+0=a
+		a+1=1
+		a+a=a
+		a+`a=1
+	Inversion rule 
+		`(`a)=a
+	associate Law 
+		(a*b)*c=a*(b*c)=a*b*c
+		(a+b)+c=a+(b+c)=a+b+c
+	commutative law
+		a*b*c=b*a*c=c*b*a
+		a+b+c=b+a+c=c+b+a
+	distributive law
+		a*(b+c)=(a*b)+(a*c)
+		a+(b*c)=(a+b)*(a+c)
+	DeMorgan's law
+		convert between AND and OR
+		invert inputs
+		inver outpus
+		swap AND/OR
+			a*b=`(`a+`b)
+			`(a*b)=`a+`b
+
+	Examples
+	a+a*b = (a*1)+(a*b)=a*(1+b)=a*1=a
+
+	(a+b)*(a+c)
+	a*a+a*c+b*a+b*c		Dist Law
+	a  +a*c+a*b+b*c 	AND rule
+	a*1+a*c+a*b+b*c		AND rule
+	a*(1+c+b)  +b*c		Dist law
+	a*1        +b*c		OR rule
+	a	   +b*c		AND Rule
+	a+b*c
+
+	a*b*c+a*b*`c+`a*b*c+`a*b
+	a*b*(c+`c)+`a*b*(c+1)
+	a*b*1+ `a*b*1
+	a*b+`a*b
+	b*(a+`a)
+	b*1
+	b
+
+	(a+b+c)*(a+b+`c)*(a+`c)
+	(a+b+c)*[(a+`c)+(b*0)]
+	(a+b+c)*(a+`c)
+	a*a+[(b+c)*`c]
+	a+(`c*b+0)
+	a+(`c*b)
+		
+	`(a*b*c)+(`a*b*c)+`(a*c)
+	(`a+`b+`c)+(`a*b*c)+(`a+`c)
+	`a+`b+`c+(`a*b*c)+`a+`c
+	`a+`b+`c+(`a*b*c)
+	`a(1+b*c)+`b+`c
+	`a*1+`b+`c
+	`a+`b+`c =>(optional)=> `(a*b*c)
+	
+	a+`a*b
+	a*1+`a*b
+	a*(1+b)*`a*b
+	(a*1+a*b)*`a*b
+	a+a*b+`a*b
+	a+b*(a+`a)
+	a+b*1
+	a+b
+
+	(a(+)b)+(a(+)`b)
+	(a*`b+`a*b)+(a*b+`a*b)
+	a*(`b+b)+`a*(b+`b)
+	a*1+`a*1
+	a+`a
+	1
+	
+	`(a(+)b)+a*b*c+`(a*b)
+	a*b+`a*`b+a*b*c+`(a*b)
+	a*b+`a*`b+a*b*c+`a+`b
+	a*b*(1+c)+`a*(`b+1)+`b
+	a*b*1+`a*1+`b
+	a*b+`a+`b
+	(a+`a)*(b+`a+`b)+`b
+	a*(b+`a)+`b
+	b+`a+`b
+	`a+1
+	1
+	
+	`(`a+`b)+`(a+b)+`(a+`b)
+	a*b+`a*`b+`a*b
+	a*b+`a*(`b+b)
+	a*b+`a*1
+	a*b+`a
+	(a+`a)*(b+`a)
+	1*(b+`a)
+	b+`a
+
+	a*(`a+b)
+	a*`a+a*b
+	0+a*b
+	a*b
+	
+	a*`b+`b*c+`a*c
+	a*`b+`b*c*1+`a*c
+	a*`b+`b*c*(a+`a)+`a*c
+	a*`b+`b*c*a+`b*c*`a+`a*c
+	a*`b*(1+c)+`a*c*(b+1)
+	a*`b+`a*c
+	(middle term is useless)
+	

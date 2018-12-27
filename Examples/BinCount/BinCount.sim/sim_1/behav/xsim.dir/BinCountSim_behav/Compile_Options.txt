@@ -1,0 +1,1 @@
+-wto "62fac1e95816473aab6e937aafcf2aad" --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "BinCountSim_behav" "xil_defaultlib.BinCountSim" "xil_defaultlib.glbl" -log "elaborate.log" 

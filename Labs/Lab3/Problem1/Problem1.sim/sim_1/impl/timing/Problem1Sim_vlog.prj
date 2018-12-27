@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "Problem1Sim_time_impl.v"
+verilog xil_defaultlib  "../../../../Problem1.srcs/sim_1/new/Problem1Sim.v"
+
+# Do not sort compile order
+nosort

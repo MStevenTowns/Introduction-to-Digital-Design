@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Examples/MUX4_1/MUX4_1.srcs/sources_1/new/Mux21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux21
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Examples/MUX4_1/MUX4_1.srcs/sources_1/new/MUX41.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX41
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Examples/MUX4_1/MUX4_1.srcs/sim_1/new/MuxSim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MuxSim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Examples/MUX4_1/MUX4_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

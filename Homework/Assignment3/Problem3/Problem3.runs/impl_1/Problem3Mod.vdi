@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Jan 13 22:52:10 2016
+# Process ID: 11529
+# Current directory: /home/steven/Dropbox/Verilog/Homework/Assignment3/Problem3/Problem3.runs/impl_1
+# Command line: vivado -log Problem3Mod.vdi -applog -messageDb vivado.pb -mode batch -source Problem3Mod.tcl -notrace
+# Log file: /home/steven/Dropbox/Verilog/Homework/Assignment3/Problem3/Problem3.runs/impl_1/Problem3Mod.vdi
+# Journal file: /home/steven/Dropbox/Verilog/Homework/Assignment3/Problem3/Problem3.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Problem3Mod.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "Problem3Mod.tcl" line 49)
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 13 22:52:16 2016...

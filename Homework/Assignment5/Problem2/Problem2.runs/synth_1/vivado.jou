@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Feb 16 11:33:16 2016
+# Process ID: 1920
+# Current directory: /home/steven/Dropbox/Verilog/Homework/Assignment5/Problem2/Problem2.runs/synth_1
+# Command line: vivado -log BitSlice.vds -mode batch -messageDb vivado.pb -notrace -source BitSlice.tcl
+# Log file: /home/steven/Dropbox/Verilog/Homework/Assignment5/Problem2/Problem2.runs/synth_1/BitSlice.vds
+# Journal file: /home/steven/Dropbox/Verilog/Homework/Assignment5/Problem2/Problem2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source BitSlice.tcl -notrace

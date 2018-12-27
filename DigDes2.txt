@@ -1,0 +1,55 @@
+Verilog
+Structural Design
+	structure of circuit
+	must be analized to determine behavior
+	specific and detailed on a gate level
+	more accurate for timing considerations (not important now)
+	more time consuming to write
+
+Verilog
+Module
+	a defined part, schematic, equation
+	contains inputs and outputs
+	can be combined or resued inside other modules
+Xilinx "New Source" dialogs automate creation of the structure with inputs/outputs
+
+module moduleName(
+	input VariableName,
+	input VariableName,
+	output VariableName,
+	output VariableName
+	);
+//My Stuff happens here
+endmodule
+
+Comments 
+	ignored by synthesis
+	use to explain code
+	show up in Xilinx as green text
+	//Single line comment
+	/* Multi line comment */
+
+Bitwise Operators
+	~ 	NOT
+	&	AND
+	| 	OR
+	^	XOR
+
+Assignment Statements
+	=		store right into left
+			F = A & B;
+			(just like all other languages)
+			assignment statements are evaluated in order writen
+			ORDER MATTERS
+	<=	
+			F <= A & B;
+			everything to right is evaluated and then assigned to left
+			groups of assignment statements are evaluated at the same time
+			ORDER DOESN'T MATTER
+	assign =
+			assign F = A & B;
+			Everything to right is continouslly evaluated and assigned to variable on the left
+			re-evaluated everytime A or B changes
+			ORDER DOESN'T MATTER
+unknown state exists!
+

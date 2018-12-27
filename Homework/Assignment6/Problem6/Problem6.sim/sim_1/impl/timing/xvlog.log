@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Homework/Assignment6/Problem6/Problem6.sim/sim_1/impl/timing/Problem6Sim_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Problem6Mod
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Homework/Assignment6/Problem6/Problem6.srcs/sim_1/new/Problem6Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Problem6Sim

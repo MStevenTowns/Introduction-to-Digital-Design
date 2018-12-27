@@ -1,0 +1,3 @@
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+$finish called at time : 640 ns : File "/home/steven/Dropbox/Verilog/Examples/MUX4_1/MUX4_1.srcs/sim_1/new/MuxSim.v" Line 28

@@ -1,0 +1,211 @@
+Dr Harbour teaches micro proccessors
+
+All test on thursday
+no calculator, no notes
+
+around project 3/4 large jump in dificulty of projects
+lots of code
+
+Actual Crap:
+Transistors
+	  |---Source	
+Gate--|
+	  |---Drain
+
+	nFET
+On(shorted) when Gate is High
+off(open) when Gate is Low
+
+
+	  |---Source	
+Gate-o|
+	  |---Drain
+	 
+	 pFET
+On(shorted) when Gate is low
+off(open) when Gate is High
+
+2 transistors to make an inverter
+use logic gates instead of big circuit
+
+inverter/NOT gate 
+A--|>o---X
+(triangle pointing to circle)
+X is NOT A or A NOT
+  _
+X=A
+X=A'
+X=!A
+
+
+AND Gate
+A---| )
+	|  )--X
+B---| )
+
+(A and B go to a Big D)
+X is A and B
+X= A*B or AB
+
+OR gate
+Curvy arrow
+
+X is A or B
+X=A+B
+
+XOR 
+Curvy line behind curvy arrow
+X is A or B but not both
+X=A (circled +)B
+
+NAND Gate
+(and Gate with circle)
+(Not and)
+X is not (A and B)
+X=(AB)'
+
+NOR
+OR with dot
+X is not (A or B)
+X=(A+B)'
+
+XNOR
+XOR with circle
+not XOR
+
+XOR
+F=A(+)B
+SOP: F=A'*B+A*B'
+POS: F=(A+B)*(A'+B')
+F=A(+)B(+)C
+Also known as "odd detector"
+Controlled Inverter
+use 1 input as a control and 
+
+Transistor Count
+NOT 	2
+AND 	6
+OR		6	
+XOR		6
+NAND	4
+NOR		4
+XNOR	8
+
+AND / OR Conversion
+and to or : invert both of the inputs and the output
+works with nand/nor
+
+Logic circuit
+F=((AB)+C)+(BC)
+
+Combine Inverters
+
+
+
+Digital Circuits
+Combinational (Most of class)
+	inputs combined to produce output
+	same input always produce same output
+	no "feedback" from output to input
+Sequential (~Last 2 weeks)
+	Inputs combine with current output to make new output
+	memory is needed to save output state
+	same inputs may not always produce the same output
+	the output can change even if inputs don't 
+	
+Combinational Circuits
+	All combinational circuits can be expressed in 2 forms
+	Sum of Products (SOP)
+		OR all  of the AND terms
+	Product of Sums (POS)
+		AND all of the OR terms
+		
+Digital Expressions
+	Boolean Algebra
+		System of symbolic logic used in digital logic
+	Order of Operations
+		Invert/NOT
+		AND / NAND
+		XOR / XNOR
+		OR / NOR
+		
+Sum of Products (SOP)
+	Use Truth table to write SOP forms	
+	1) Each row with output of 1 will result in a term
+	2) Every input is used in each term
+		a) each input is AND'ed together in term
+		b) if input is 1, the term is positive
+		c) if input is 0, term is NOT'ed
+	3) All Terms OR'ed together
+
+Products of Sums
+	Use Truth Table
+	1) Each row of output of 0 will result in a term
+	2) Every input will be used
+		a)all input OR'ed toghether in term
+		b) if input is 0 Term is positive
+		C) if input is 1 term is NOT'ed
+	ALl Terms are AND'ed together
+	
+Minterms / MaxTerms
+				(SOP)		(POS)
+Term	ABC		minTerm		max			F
+0		000		(A'*B'*C')	(A+B+C)		0 
+1		001		(A'*B'*C)	(A+B+C')	1
+2		010		(A'*B*C')	(A+B'+C)	0
+				.
+				.
+				.
+SOP
+F=SUM(m(1,3,5))
+POS
+F=AND(M(0,2,4,6,7))
+
+Hardware Design before FPGA
+	Design Logic --|> send off to manufacturer
+		(up)					(down)
+	Redesign for errors <|-- Verify Hardware Design
+	
+with FPGA
+	Design Logic --|> download to FPGA
+		(up)					(down)
+	Redesign for errors <|-- Verify Hardware Design on FPGA
+Downloading designs on FPGA is free and takes minutes to hours
+
+Basis3 Board
+	FPGA - Field Programable Gate Array
+	allow Customizable logic designs to be implemented in hardware
+	logic design can be easily changed and configured
+	
+Hardware Description Language (HDL)
+	Most popular HDL
+		VHDL
+			Governement/Military developed
+			University Research
+			European Industry
+		Verilog
+			Newer
+			Originally Proprietary
+			US Industry
+			simmilar to C
+	write code that describes a piece of hardware/how we want it connected
+	
+Verilog
+	Structural Design
+		Describes the structure of the circuit
+		Must be analized to determine the behavior
+		specific and detailed on a gate level
+		more acurate for timing considerations
+		more time consuming to write *Unless exremely simple*
+	Behavioral Design
+		Describe how circuit operates or behaves
+		Must be synthesized to determine what structure will give desired output
+		Quicker and easier to write
+		hard to find timing issues because of unknown structure
+	*These two are not as well defined as this, usually used together
+	
+Homework:
+install and license Xilinx
+on thursday there is a lab using Xilinx
+install Digilent Adept 
+Verify both are working before class

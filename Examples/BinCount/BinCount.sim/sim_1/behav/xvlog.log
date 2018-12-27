@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Examples/BinCount/BinCount.srcs/sources_1/new/BinCount.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BinCount
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Examples/BinCount/BinCount.srcs/sim_1/new/BinCountSim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BinCountSim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Verilog/Examples/BinCount/BinCount.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1454011584">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="Problem1Sim.vdi"/>
+  <File Type="BG-DRC" Name="Problem1Sim.drc"/>
+  <File Type="BG-BGN" Name="Problem1Sim.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="Problem1Sim.sysdef"/>
+  <File Type="BITSTR-MMI" Name="Problem1Sim.mmi"/>
+  <File Type="BITSTR-BMM" Name="Problem1Sim_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="Problem1Sim.nky"/>
+  <File Type="BITSTR-RBT" Name="Problem1Sim.rbt"/>
+  <File Type="BITSTR-MSK" Name="Problem1Sim.msk"/>
+  <File Type="BG-BIN" Name="Problem1Sim.bin"/>
+  <File Type="BG-BIT" Name="Problem1Sim.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Problem1Sim_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Problem1Sim_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Problem1Sim_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="Problem1Sim_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="Problem1Sim_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Problem1Sim_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="Problem1Sim_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Problem1Sim_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Problem1Sim_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="Problem1Sim_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Problem1Sim_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Problem1Sim_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Problem1Sim_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Problem1Sim_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="Problem1Sim_routed.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="Problem1Sim_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="Problem1Sim_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Problem1Sim_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Problem1Sim_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Problem1Sim_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="Problem1Sim_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Problem1Sim_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Problem1Sim_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Problem1Sim_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Problem1Sim_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="Problem1Sim_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Problem1Sim_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="Problem1Sim_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="Problem1Sim_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Problem1Sim_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Problem1Sim_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Problem1Sim_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="Problem1Sim_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Problem1Sim.hwdef"/>
+  <File Type="OPT-DRC" Name="Problem1Sim_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Problem1Sim_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Problem1Sim_timing_summary_init.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Problem1Sim_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="Problem1Sim.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Problem1Sim.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Problem1Sim"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Problem1Const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Vivado/Homework/Assignment 1/Problem1.srcs/sources_1/new/Problem1Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Problem1Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Vivado/Homework/Assignment 1/Problem1.srcs/sim_1/new/Problem1Simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Problem1Simulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/steven/Dropbox/Vivado/Homework/Assignment 1/Problem1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

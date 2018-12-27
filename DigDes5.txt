@@ -1,0 +1,14 @@
+loops in sim
+
+reg[3:0]
+for (count = 0; count <= 5'b1111;count=count+1)
+	begin
+		a=count[3];
+		b=count[2];
+		c=count[1];
+		c=count[0];
+		#10
+	end
+
+
+
